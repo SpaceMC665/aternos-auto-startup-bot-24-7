@@ -1,0 +1,1 @@
+# aternos-auto-startup-bot-24-7
