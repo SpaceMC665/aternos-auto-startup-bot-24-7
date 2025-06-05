@@ -44,12 +44,12 @@ const TARGET_URL = 'https://aternos.org/server/';
 
   // Loop para esperar botão "Confirmar" e clicar nele
 // Loop para esperar o botão "Confirmar agora!" e clicar nele
-const maxRetries = 2000;  // tenta por até 60 segundos (20 x 3s)
+const maxRetries = 5000;  // tenta por até 250 segundos/4:10 minutos (50 x 5s)
 let retries = 0;
 
 while (retries < maxRetries) {
   try {
-    await page.waitForTimeout(3000); // espera 3 segundos
+    await page.waitForTimeout(50000); // espera 5 segundos
 
     const confirmButton = await page.$x('/html/body/div[3]/main/section/div[3]/div[5]/div[5]');
     
